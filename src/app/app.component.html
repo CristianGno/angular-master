@@ -1,8 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div>
+<div [ngStyle]="{
+				'background': config.fondo, 
+				'padding': '20px',
+				'border': '5px solid black',
+				'border-color': config.color
+			}"
+>
   <h1>
-    Bienvenido a {{ title }}!
+    Bienvenido a {{ titulo }}!
   </h1>
+
+  <h2>{{descripcion}}</h2>
 
   <videojuego *ngIf="mostrar_videojuegos"></videojuego>
 	
