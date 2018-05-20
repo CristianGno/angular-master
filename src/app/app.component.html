@@ -4,7 +4,13 @@
     Bienvenido a {{ title }}!
   </h1>
 
-  <videojuego></videojuego>
+  <videojuego *ngIf="mostrar_videojuegos"></videojuego>
+	
+  <button (click)="ocultarVideojuegos()" *ngIf="mostrar_videojuegos">Ocultar videojuegos</button>
+  <button (click)="mostrarVideojuegos()" *ngIf="!mostrar_videojuegos">Mostrar videojuegos</button>
+
+  <zapatillas></zapatillas>
+  <cursos></cursos>
   
 </div>
 

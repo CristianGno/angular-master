@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Angular Master';
+  public title = 'Angular Master';
+  private mostrar_videojuegos: boolean = true;
+
+  ocultarVideojuegos(){
+  	this.mostrar_videojuegos = false;
+  }
+
+  mostrarVideojuegos(){
+  	this.mostrar_videojuegos = true;
+  }
 }
