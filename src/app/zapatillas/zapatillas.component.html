@@ -2,6 +2,7 @@
 
 
 <ul>
-	<li>Rebook</li>
-	<li>Adidas</li>
+	<li *ngFor="let zapatilla of zapatillas">
+		{{zapatilla.nombre}} - <strong>{{zapatilla.precio}}</strong>
+	</li>
 </ul>
